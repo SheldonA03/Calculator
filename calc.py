@@ -134,7 +134,7 @@ class Calculator:
             self.current_expression = str(eval(self.total_expression))
 
             self.total_expression = ""
-        except Exception as e:
+        except Exception:
             self.current_expression = "Error"
         finally:
             self.update_label()
